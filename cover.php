@@ -2,7 +2,7 @@
  
     $current_date = date('d' . '.' . 'm' . '.' . 'Y') . 'г'; //Получаем в переменную текущую дату
 	$minutes = date('G' . ':' . 'i'); //Получаем текущее время
-    $image = imageCreateFromJpeg('cover.jpg'); //получаем изображение, обложку из файла
+    $image = imageCreateFromJpeg(__DIR__.'cover.jpg'); //получаем изображение, обложку из файла
     $white = imagecolorallocate($image, 255, 255, 255); //Добавляем в палитру белый цвет для шрифта
      
     $font = __DIR__ . '/ProximaNova-Regular.ttf'; //Шрифт
